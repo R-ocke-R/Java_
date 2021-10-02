@@ -1,0 +1,46 @@
+public class SavingsAccount {
+  
+  int balance;
+  
+  public SavingsAccount(int initialBalance){
+    balance = initialBalance;
+  }
+  
+  //check balance
+  public void checkBalance(){
+    System.out.println("Hello!\nYour balance is "+balance);
+  }
+  
+  //deposit
+  public void deposit(int amount){
+    balance+=amount;
+    System.out.println("You just deposited "+ amount);
+  }
+
+  //withdraw
+  public int withdraw(int amount){
+    balance-=amount;
+    System.out.println("You just withdrew "+amount);
+    return amount;
+  }
+
+  //toString methods
+  public String toString(){
+    return "Hey Love, You are looking beautiful today, your balance is "+ balance+" remember to keep smiling : ) and have a great day ahead ";
+  }
+
+  public static void main(String[] args){
+    SavingsAccount savings = new SavingsAccount(2000);
+    
+    //Check balance:
+    savings.checkBalance();
+    savings.deposit(50);
+    savings.checkBalance();
+    savings.withdraw(300);
+    savings.checkBalance();
+    savings.deposit(600);
+    savings.checkBalance();
+    System.out.println(savings);
+    
+  }       
+}
