@@ -1,5 +1,5 @@
 public class SavingsAccount {
-  
+  //instance variable //attribute
   int balance;
   
   public SavingsAccount(int initialBalance){
