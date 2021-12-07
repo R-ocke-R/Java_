@@ -42,7 +42,6 @@ class RegexQuestion{
         // all name in string that start with N
             p= Pattern.compile("[Nn][a-zA-z]{0,20}");
             m= p.matcher(str);
-            System.out.println(str);
             while (m.find()){
                 count+=1;
                 System.out.println(m.group()+ "  "+m.start()+"   "
@@ -54,7 +53,6 @@ class RegexQuestion{
         // all name in string that start with N
             p= Pattern.compile("[a-zA-z]{0,20}[Jj]");
             m= p.matcher(str);
-            System.out.println(str);
             while (m.find()){
                 count+=1;
                 System.out.println(m.group()+ "  "+m.start()+"   "
@@ -66,7 +64,6 @@ class RegexQuestion{
         // all name in string that start with N
         p= Pattern.compile("[Nn][a-zA-z]{0,}[Jj]");
         m= p.matcher(str);
-        System.out.println(str);
         while (m.find()){
             count+=1;
             System.out.println(m.group()+ "  "+m.start()+"   "
@@ -75,13 +72,38 @@ class RegexQuestion{
         System.out.println(count);
         break;
         case 4:
-            System.out.println("Thursday");
+        // the code works but even when command line input is more than 10 digits...
+        // how should i solve that.
+            System.out.println("In this question the string input for valid mobile number is entered via command line arguement ");
+            p= Pattern.compile("[0-9]{10}");
+            m= p.matcher(args[0]);
+            while (m.find()){
+                count+=1;
+                System.out.println(m.group()+ "  "+m.start()+"   "
+                 +m.end());;
+            }
+            System.out.println(count);
             break;
         case 5:
-            System.out.println("Friday");
+        System.out.println("rules: first character should be alpha only, can end with any domain name system(minimum 1 character) but .com is must, must have atleast 5 characters in user name");
+        p= Pattern.compile("[a-zA-Z][\\w]{4,}[@][\\w]{1,}[.com]{3}");
+        m= p.matcher(str);
+        while (m.find()){
+            count+=1;
+            System.out.println(m.group()+ "  "+m.start()+"   "
+             +m.end());;
+        }
+        System.out.println(count);
             break;
         case 6:
-            System.out.println("Saturday");
+        p= Pattern.compile("[~!@#$%^&*()_+{}\\[\\]:;,.<>/?-]");
+        m= p.matcher(str);
+        while (m.find()){
+            count+=1;
+            System.out.println(m.group()+ "  "+m.start()+"   "
+             +m.end());;
+        }
+        System.out.println(count);
             break;
         }
         
