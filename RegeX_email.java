@@ -23,8 +23,7 @@ class RegeX_email{
         
     }
 }
-
-
+ 
 // for email patching pattern
 // String Targettt="[a-zA-Z0-9_.][@][gmail|yahoo|outlook|hotmail].com";
 // 

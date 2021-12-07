@@ -31,30 +31,30 @@ public class regex_lab {
 }
 
 
-public class Regex2 {
-    public static void main(String[] args) {
-        //first
-        // String target="6397955439";
-        // String target ="neeraj";
-        // Pattern p = Pattern.compile("[[0-9]{10}]?");
-        // 10 digit number check 
-        //first
+// public class Regex2 {
+//     public static void main(String[] args) {
+//         //first
+//         // String target="6397955439";
+//         // String target ="neeraj";
+//         // Pattern p = Pattern.compile("[[0-9]{10}]?");
+//         // 10 digit number check 
+//         //first
 
-        // /second
-        String target ="6397955439";
-        Pattern p = Pattern.compile("0?[0-9]{10}");
-        //
-        // Pattern p3 = Pattern.compile("(0|91)[0-9]{10}");
-        //
-        // Pattern p = Pattern.compile("[n][a-z]+");
-        Matcher m = p.matcher(target);
-        System.out.println(m.matches());
-        while (m.find()){
-            System.out.println(m.start()+" to "+m.end()+"-----"+m.group());
-        }
-        // for email patching pattern
-        //String Targett="[a-zA-Z0-9_.]@gmail.com";
-        // all .com's accepted,
-        // String Targettt="[a-zA-Z0-9_.][@][gmail|yahoo].com";
-    }
-}
+//         // /second
+//         String target ="6397955439";
+//         Pattern p = Pattern.compile("0?[0-9]{10}");
+//         //
+//         // Pattern p3 = Pattern.compile("(0|91)[0-9]{10}");
+//         //
+//         // Pattern p = Pattern.compile("[n][a-z]+");
+//         Matcher m = p.matcher(target);
+//         System.out.println(m.matches());
+//         while (m.find()){
+//             System.out.println(m.start()+" to "+m.end()+"-----"+m.group());
+//         }
+//         // for email patching pattern
+//         //String Targett="[a-zA-Z0-9_.]@gmail.com";
+//         // all .com's accepted,
+//         // String Targettt="[a-zA-Z0-9_.][@][gmail|yahoo].com";
+//     }
+// }
