@@ -2,7 +2,7 @@ import java.util.Locale;
 import java.util.Scanner;
 
 // 10th November OOPS Lab
-public class November10 {
+public class Exception_Handling_Lab {
 }
 class test1{
     public static void main(String args[]) {

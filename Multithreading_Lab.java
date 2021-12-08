@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
-public class November_seventeenth {
+public class Multithreading_Lab {
     public static void main(String[] args) throws IOException {
         // buffered reader is just for file handler, but it doesn't have specific methods for primitive data types.
         try(Scanner s = new Scanner (System.in); BufferedReader br= new BufferedReader(new InputStreamReader(System.in))){
