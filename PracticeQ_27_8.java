@@ -1,4 +1,5 @@
 import java.lang.reflect.Constructor;
+import java.util.Arrays;
 
 import javax.management.ConstructorParameters;
 
@@ -60,5 +61,46 @@ class gender{
             System.out.println("Percentage of interest 10.5%");
             //statements
         }
+    }
+}
+//4th is pretty basic.
+class Sample{
+    public static void main(String[] args) {
+        System.out.println("Welcome   "+args[0]);
+        
+    }
+}
+class CommandLine{
+    public static void main(String[] args) {
+        if (args.length==0){
+            System.out.println("No value");
+
+        }
+        else{
+            System.out.println(Arrays.toString(args));
+        }
+    }
+}
+
+class CommandLineTwo{
+    public static void main(String[] args) {
+        //works but no need to exception handling as there won't ever be any exception
+        //as even the empty array is converted to [] string, and i can't if block that... for now.
+        try{
+            System.out.println(Arrays.toString(args));
+        }
+        catch(ArrayIndexOutOfBoundsException obj){
+            System.out.println("No value");
+        }
+    }
+}
+
+class tensDigit{
+    public static void main(String[] args) {
+        // nice way to find out 10's digit of any given number
+        //gives appropriate digit and for 2+ digit numbers and 0 for single digit number
+        int n=0;
+        int m= n%100;
+        System.out.println(m/10);
     }
 }
