@@ -93,6 +93,7 @@ public class Exception_Menu_Driven_Lab {
                     case 5:
                     try{
                         int a = Integer.parseInt(null);
+                        System.out.println(a);
                     }
                     catch(NumberFormatException obj){
                         System.out.println(obj);

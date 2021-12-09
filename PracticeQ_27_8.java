@@ -1,14 +1,10 @@
-import java.lang.reflect.Constructor;
 import java.util.Arrays;
-
-import javax.management.ConstructorParameters;
 
 class PracticeQ_27_8{
     public static void main(String[] args) {
         // shape sp= new shape();
         // sp.draw();
         // sp.erase();
-        gender g = new gender();
         Patient p= new Patient("Arjun", 10, 2);
         System.out.println(p.computeBMI());
     }
@@ -98,7 +94,7 @@ class CommandLineTwo{
 class tensDigit{
     public static void main(String[] args) {
         // nice way to find out 10's digit of any given number
-        //gives appropriate digit and for 2+ digit numbers and 0 for single digit number
+        //gives appropriate digit and for 2+ digit numbers and 0 for single digit number and 0
         int n=0;
         int m= n%100;
         System.out.println(m/10);

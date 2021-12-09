@@ -1,4 +1,3 @@
-import java.util.Locale;
 import java.util.Scanner;
 
 // 10th November OOPS Lab

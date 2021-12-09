@@ -3,16 +3,16 @@ import java.util.regex.Pattern;
 
 public class regex_lab {
     public static void main(String[] args) {
-        String target1="dbmsdbmsdbms dbmsdbmsdbmsdbmsdbms";
+        // String target1="dbmsdbmsdbms dbmsdbmsdbmsdbmsdbms";
         String target =" jsldkjf dbms df22df dbmmm12s dfs22kj DBMS";
-        String target2= "asdf123123 asdasd";
-        String target3= "m 4# A&mm ttymmm";
+        // String target2= "asdf123123 asdasd";
+        // String target3= "m 4# A&mm ttymmm";
 
-        Pattern p = Pattern.compile ("dbms");
+        // Pattern p = Pattern.compile ("dbms");
         Pattern p2 = Pattern.compile ("dbms", Pattern.CASE_INSENSITIVE);
-        Pattern p3= Pattern.compile ("[a-z]{5}");
-        Pattern p4= Pattern.compile("//s");
-        Pattern p5= Pattern.compile("m*");
+        // Pattern p3= Pattern.compile ("[a-z]{5}");
+        // Pattern p4= Pattern.compile("//s");
+        // Pattern p5= Pattern.compile("m*");
         Matcher m =p2.matcher(target);
         //default regex used by string tokenizer class for token seperation.
         int ctr =0;
