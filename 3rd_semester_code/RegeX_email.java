@@ -10,7 +10,7 @@ class RegeX_email{
         String str= "sharmaManu@gmail.com";
         // String tr= "mini";
         // instantiation
-        Pattern p = Pattern.compile("[a-zA-z]{1,22}[@](gmail.com|yahoo.com)");
+        Pattern p = Pattern.compile("[a-zA-z]{1,22}@(gmail.com|yahoo.com)");
         // Pattern p = Pattern.compile("manu|mini");
         Matcher m = p.matcher(str);
         

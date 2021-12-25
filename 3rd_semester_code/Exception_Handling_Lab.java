@@ -125,8 +125,9 @@ class test7{
 
         }
         catch(Exception obj){
-            System.out.println("error");
+            System.out.println("rw");
         }
+
         System.out.println("end");
 
     }
@@ -176,6 +177,12 @@ class test9{
             System.out.println();
         }
 
+    }
+}
+class excep{
+    static ArithmeticException obj;
+    public static void main (String[] args){
+        throw obj;
     }
 }
 

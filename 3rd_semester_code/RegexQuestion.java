@@ -40,7 +40,8 @@ class RegexQuestion{
         switch (choice) {
         case 1:
         // all name in string that start with N
-            p= Pattern.compile("[Nn][a-zA-z]{0,20}");
+        count=0;
+            p= Pattern.compile("[Nn]+");
             m= p.matcher(str);
             while (m.find()){
                 count+=1;
@@ -86,7 +87,7 @@ class RegexQuestion{
             break;
         case 5:
         System.out.println("rules: first character should be alpha only, can end with any domain name system(minimum 1 character) but .com is must, must have atleast 5 characters in user name");
-        p= Pattern.compile("[a-zA-Z][\\w]{4,}[@][\\w]{1,}[.com]{3}");
+        p= Pattern.compile("[a-zA-Z][\\w]{4,}[@][\\w]{1,}[.]com");
         m= p.matcher(str);
         while (m.find()){
             count+=1;
@@ -96,7 +97,8 @@ class RegexQuestion{
         System.out.println(count);
             break;
         case 6:
-        p= Pattern.compile("[~!@#$%^&*()_+{}\\[\\]:;,.<>/?-]");
+        // p= Pattern.compile("[~!@#$%^&*()_+{}\\[\\]:;,.<>/?-]");
+        p= Pattern.compile("\\W6");
         m= p.matcher(str);
         while (m.find()){
             count+=1;
